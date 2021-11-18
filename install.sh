@@ -188,7 +188,7 @@ verb 3
 echo "client
 dev tun
 proto tcp
-remote 127.0.0.1 9443
+remote 127.0.0.1 587
 route $MYIP 255.255.255.255 net_gateway
 resolv-retry infinite
 route-method exe
@@ -432,8 +432,8 @@ accept = 443
 connect = 127.0.0.1:143
 
 [openvpn]
-accept = 587
-connect = 127.0.0.1:9443
+accept = 9443
+connect = 127.0.0.1:587
 
 [dropbear]
 accept = 2905
